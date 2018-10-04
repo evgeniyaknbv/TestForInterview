@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/sound_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/play_button"
+        tools:text="@tools:sample/cities"
+        android:text="sound name"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|>"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/sound_name"
+        app:layout_constraintRight_toLeftOf="@+id/pause_button"
+        />
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/play_button"
+        app:layout_constraintRight_toLeftOf="@+id/stop_button"
+        android:text="||"
+        />
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/pause_button"
+        app:layout_constraintRight_toLeftOf="@+id/reset_button"
+        android:text="|_|"
+        />
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/stop_button"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="rv"
+        />
+
+</android.support.constraint.ConstraintLayout>
